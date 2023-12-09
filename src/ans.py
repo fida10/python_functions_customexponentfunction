@@ -7,4 +7,8 @@ Create a function custom_exponent that takes two numbers, a base and an exponent
 """
 
 def custom_exponent(base, exp):
-    return base ** exp
+    ans = 1
+    for i in range(0, exp):
+        ans *= base
+    
+    return ans
